@@ -1,20 +1,43 @@
 * {
-    font-family: 'Roboto', 'DM Sans', sans-serif;
+    font-family: 'Poppins, Roboto', 'DM Sans', sans-serif;
     border: black solid 1px;
+    color: white;
+    box-sizing: border-box;
+    
 }
 
+:root[data-theme="light"] {
+    --text: #000000;
+    --background: #e5eaf5;
+    --primary: #734a26;
+    --secondary: #a9bbe5;
+    --accent: #c99d45;
+}
+
+:root[data-theme="dark"] {
+    --text: #ffffff;
+    --background: #0a0f1a;
+    --primary: #d9b08c;
+    --secondary: #1a2c56;
+    --accent: #ba8e36;
+}
+  
 @media (max-width: 979px) {
     body {
         padding-top: 0px;
     }
 }
 
-body {
-    padding-top: 65px;
+h1 {
+    font-size: 500;
 }
 
-
-
-.row {
-    min-height: 400px;
+.container {
+    background-color: #0a0f1a;
 }
+
+.intro, 
+.about {
+    height: 750px;
+}
+
