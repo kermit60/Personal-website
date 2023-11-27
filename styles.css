@@ -1,6 +1,6 @@
 * {
     font-family: 'Poppins, Roboto', 'DM Sans', sans-serif;
-    border: black solid 1px;
+    /* border: black solid 1px; */
     color: var(--text);
     box-sizing: border-box;
 }
@@ -37,17 +37,21 @@
 .about-left {
     background-color: #3a64a8;
     color: #e5eaf5;
-    /* height: 680px; */
+    
 }
 
 .about-right {
     background-color: rgb(197, 248, 255);
     color: #0a0f1a;
-    /* height: 680px; */
+    
 }
 
 .intro, 
-.about {
-    min-height: 850px;
+.about,
+.projects {
+    min-height: 990px;
 }
 
+.images {
+    padding: 0px;
+}
