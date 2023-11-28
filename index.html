@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <button id="top-button">Go to top</button>
     <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"> Kermit Liu</a>
@@ -23,13 +24,13 @@
             <div class="collapse navbar-collapse" id="navBar">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -37,22 +38,22 @@
     </nav>
 
     <div class="container mw-100 ">
-        <div class="row intro d-flex flex-column justify-content-center align-items-center">
+        <div id="intro" class="row d-flex flex-column justify-content-center align-items-center">
             <div class="col-md-3  w-100 d-flex flex-column align-items-center 
             justify-content-center text-center">
-                <h1 class="display-2">Hi! I'm <span class="fw-bold">Kermit liu</span>. An Upcoming Web Developer!</h1>
+                <h1 class="display-2">Hi! I'm <span class="d-inline-block fw-bold enlarge">Kermit liu</span>. An Upcoming Web Developer!</h1>
             </div>
         </div>
 
-        <div class="row d-flex gap-5 p-md-5 p-sm-2">
+        <div id="about" class="row d-flex gap-5 p-md-5 p-sm-2">
             <div class="col-md fs-1 d-flex flex-column align-items-center 
-                        justify-content-center about-left gap-3 rounded-4">
+                        justify-content-center about-left gap-3 rounded-4 p-md-5 enlarge">
                 <h1 class="text-center m-4" >About Me</h1>
                 <img src="images/cat.jpeg" class="image-fluid w-50 rounded-circle " alt="50%">
-                <p class="about-left text-center m-3">Hey! I'm Kermit, a student at the University of Waterloo studying Mathematics with a passion for Computer Science</p>
+                <p class="about-left text-center m-3 ">Hey! I'm Kermit, a student at the University of Waterloo studying Mathematics with a passion for Computer Science</p>
             </div>
 
-            <div class="col-md about-right d-flex flex-column justify-content-lg-center p-lg-5 p-md-4 p-sm-5 gap-md-4 gap-sm-0 rounded-4">
+            <div class="col-md about-right d-flex flex-column justify-content-lg-center p-lg-5 p-md-4 p-sm-5 gap-md-3 gap-sm-0 enlarge rounded-4">
                 <h1 class="text-center fs-1">My digital toolbox</h1>
                 <div class="row">
                     <div class="col-md d-flex align-items-center justify-content-between">
@@ -85,13 +86,32 @@
             </div>
         </div>
         
-        <div class="row projects">
-            <div class="col-md d-flex flex-column bg-dark-subtle">
-                <h1>my first page with bootstrap</h1>
-                
+        <div id="projects" class="row p-lg-5 pd-md-5 p-sm-2 gap-md-3">
+            <h1 class="text-center">Projects</h1>
+            <div class="col-md d-flex flex-column enlarge">
+                <h3 class="text-center">Etch-a-sketch</h3>
+                <a href="https://kermit60.github.io/Etch-a-sketch/" target="_blank">
+                    <img src="images/etch-sketch.png" class="project image-fluid
+                    img-thumbnail" alt="etch-sketch image">
+                </a>
+                <p class="text-center fs-4">Etch-a-sketch drawing: <br>
+                Interactive digital recreation of the classic drawing toy and emulated the 
+                functionalities on a web platform.
+                <span style="color:rgb(249, 249, 188)">Tech stack: HTML, CSS, and JavaScript</span> </p>
             </div>
-            
+            <div class="col-md d-flex flex-column project enlarge">
+                <h3 class="text-center">Project Name</h3>
+                <a href="" target="_blank">
+                    <img src="images/etch-sketch.png" class="image-fluid img-thumbnail" alt="etch-sketch image">
+                </a>
+                <p>DESCRIPTION OF THE PROJECT</p>
+            </div>
         </div>
+
+        <div id="contact" class="row p-lg-5 pd.md-5">
+
+        </div>
+        
     </div>
 </body>
 </html>
