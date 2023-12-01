@@ -27,10 +27,13 @@
     }
 }
 
+body {
+    background-color: #0a0f1a;
+}
 
 .container {
     background-color: var(--background);
-    height: 3000px;
+    /* height: 3000px; */
     
 }
 
@@ -38,6 +41,11 @@
     background-color: #3a64a8;
     color: #e5eaf5;
     
+}
+
+.background {
+    background: #0a0f1a;
+    color: white;
 }
 
 .about-right {
@@ -88,7 +96,13 @@
     border: none;
     background-color: #0a0f1a;
 }
+
 .project {
     height: auto;
     min-width: 400px;
 }
+
+.contact {
+    margin-top: 30vh;
+}
+

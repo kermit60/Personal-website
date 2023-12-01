@@ -40,14 +40,14 @@
     <div class="container mw-100 ">
         <div id="intro" class="row d-flex flex-column justify-content-center align-items-center">
             <div class="col-md-3  w-100 d-flex flex-column align-items-center 
-            justify-content-center text-center">
-                <h1 class="display-2">Hi! I'm <span class="d-inline-block fw-bold enlarge">Kermit liu</span>. An Upcoming Web Developer!</h1>
+            justify-content-center text-md-start text-sm-center">
+                <h1 class="display-2 px-1">Hi! I'm <span class="d-inline-block fw-bold enlarge">Kermit liu</span>.<br> An Upcoming Web Developer!</h1>
             </div>
         </div>
 
         <div id="about" class="row d-flex gap-5 p-md-5 p-sm-2">
             <div class="col-md fs-1 d-flex flex-column align-items-center 
-                        justify-content-center about-left gap-3 rounded-4 p-md-5 enlarge">
+                        justify-content-center about-left gap-3 rounded-4 p-lg-5 p-md-4 p-sm-5 gap-md-3 gap-sm-0 enlarge">
                 <h1 class="text-center m-4" >About Me</h1>
                 <img src="images/cat.jpeg" class="image-fluid w-50 rounded-circle " alt="50%">
                 <p class="about-left text-center m-3 ">Hey! I'm Kermit, a student at the University of Waterloo studying Mathematics with a passion for Computer Science</p>
@@ -86,7 +86,7 @@
             </div>
         </div>
         
-        <div id="projects" class="row p-lg-5 pd-md-5 p-sm-2 gap-md-3">
+        <div id="projects" class="row p-lg-5 p-md-5 p-sm-2 gap-md-3">
             <h1 class="text-center">Projects</h1>
             <div class="col-md d-flex flex-column enlarge">
                 <h3 class="text-center">Etch-a-sketch</h3>
@@ -108,10 +108,26 @@
             </div>
         </div>
 
-        <div id="contact" class="row p-lg-5 pd.md-5">
-
+        <div class="row contact p-lg-5 p-md-5 p-sm-4">
+            <div class="col-md gap-1 text-md-start text-sm-center">
+                <h1 >Get in touch with me!</h1>
+                <h3>Have a question for me or a quick message? <br>
+                    Feel free to reach out.</h3>
+            </div>
+            <form class="col-md ">
+                <h1 class="text-center">Contact Me!<br></h1>
+                
+                <div id="contact" class="row p-lg-5 p-md-5 p-sm-3 gap-3">
+                    <input class="background" type="text" id="name" name="Name" placeholder="Name" required>
+                    <input class="background" type="text" id="email" name="email" placeholder="Email" required>
+                    <textarea class="background" id="message" name="message" placeholder="Message" style="height:200px"></textarea>
+    
+                    <button id="submit" class="background text-start" type="submit" value="Submit">Submit</button>
+                </div>
+            </form>
         </div>
-        
+        <div class="bottom-nav"></div>
     </div>
+    
 </body>
 </html>
