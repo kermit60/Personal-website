@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,500;9..40,700&family=Poppins:wght@300;500;700&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
 </head>
 <body>
     <button id="top-button">Go to top</button>
@@ -94,7 +95,7 @@
                     <img src="images/etch-sketch.png" class="project image-fluid
                     img-thumbnail" alt="etch-sketch image">
                 </a>
-                <p class="text-center fs-4">Etch-a-sketch drawing: <br>
+                <p class="text-center fs-lg-1 fs-md-4">Etch-a-sketch drawing: <br>
                 Interactive digital recreation of the classic drawing toy and emulated the 
                 functionalities on a web platform.
                 <span style="color:rgb(249, 249, 188)">Tech stack: HTML, CSS, and JavaScript</span> </p>
@@ -123,12 +124,15 @@
                     <input class="background" type="text" id="name" name="Name" placeholder="Name" required>
                     <input class="background" type="text" id="email" name="email" placeholder="Email" required>
                     <textarea class="background" id="message" name="message" placeholder="Message" style="height:200px"></textarea>
-                    <div class="h-captcha" data-captcha="true"></div>
+                    <div class="h-captcha" style="height: 100px;" data-captcha="true"></div>
                     <button id="submit" class="background text-start" type="submit" value="Submit">Submit</button>
                 </div>
             </form>
         </div>
-        <div class="bottom-nav"></div>
+
+        <div class=" row bottom-nav">
+
+        </div>
     </div>
 
     <script src="https://web3forms.com/client/script.js" async defer></script>

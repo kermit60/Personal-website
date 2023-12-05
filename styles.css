@@ -1,6 +1,6 @@
 * {
     font-family: 'Poppins, Roboto', 'DM Sans', sans-serif;
-    border: black solid 1px;
+    border: red solid 1px;
     color: var(--text);
     box-sizing: border-box;
 }
@@ -45,7 +45,7 @@ body {
 
 .background {
     background: #0a0f1a;
-    color: white;
+    
 }
 
 .about-right {
@@ -104,5 +104,9 @@ body {
 
 .contact {
     margin-top: 30vh;
+    background-color: #111333;
 }
 
+::placeholder {
+    color: white;
+}
