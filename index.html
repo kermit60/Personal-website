@@ -114,20 +114,24 @@
                 <h3>Have a question for me or a quick message? <br>
                     Feel free to reach out.</h3>
             </div>
-            <form class="col-md ">
+            <form action="https://api.web3forms.com/submit" method="POST" class="col-md">
                 <h1 class="text-center">Contact Me!<br></h1>
                 
+                <input type="hidden" name="access_key" 
+                value="eebac608-c9a9-4bb4-b42f-37f9d23bae0c">
                 <div id="contact" class="row p-lg-5 p-md-5 p-sm-3 gap-3">
                     <input class="background" type="text" id="name" name="Name" placeholder="Name" required>
                     <input class="background" type="text" id="email" name="email" placeholder="Email" required>
                     <textarea class="background" id="message" name="message" placeholder="Message" style="height:200px"></textarea>
-    
+                    <div class="h-captcha" data-captcha="true"></div>
                     <button id="submit" class="background text-start" type="submit" value="Submit">Submit</button>
                 </div>
             </form>
         </div>
         <div class="bottom-nav"></div>
     </div>
-    
+
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
+
 </html>
