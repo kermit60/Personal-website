@@ -47,7 +47,7 @@
         </div>
 
         <div id="about" class="row d-flex gap-5 p-lg-5 p-md-5 p-sm-5">
-            <div class="col-md fs-1 d-flex flex-column align-items-center 
+            <div class="col-md fs-3 d-flex flex-column align-items-center 
                         justify-content-center about-left gap-3 rounded-4 p-lg-5 p-md-4 p-sm-5
                         gap-md-3 gap-sm-0 enlarge">
                 <h1 class="text-center m-4" >About Me</h1>
@@ -55,34 +55,33 @@
                 <p class="about-left text-center m-3 ">Hey! I'm Kermit, a student at the University of Waterloo studying Mathematics with a passion for Computer Science</p>
             </div>
 
-            <div class="col-md about-right d-flex flex-column justify-content-lg-center p-lg-5 p-md-4 p-sm-5 gap-md-3 gap-sm-0 enlarge rounded-4">
+            <div class="col-md about-right d-flex flex-column justify-content-lg-center p-lg-5 p-md-4 p-sm-5
+                         gap-md-3 gap-sm-0 enlarge rounded-4 ">
                 <h1 class="text-center fs-1">My digital toolbox</h1>
-                <div class="row">
+                <div class="row gap-md-3 gap-sm-0 ">
                     <div class="col-md d-flex align-items-center justify-content-between">
-                        <img src="images/html.png" class="image-fluid images" alt="75%">
+                        <img src="images/html.png" class="image-fluid images" alt="HTML logo">
                         <span class="fs-3 about-right">HTML</span>
                     </div>
-                </div>
-                <div class="row">
                     <div class="col-md d-flex align-items-center justify-content-between">
-                        <img src="images/css.png" class="image-fluid images" alt="75%">
+                        <img src="images/css.png" class="image-fluid images" alt="CSS logo">
                         <span class="fs-3 about-right">CSS</span>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row gap-md-3 gap-sm-0">
                     <div class="col-md d-flex align-items-center justify-content-between">
-                        <img src="images/javascript.png" class="image-fluid images" alt="75%">
+                        <img src="images/javascript.png" class="image-fluid images" alt="Javascript logo">
                         <span class="fs-3 about-right">JavaScript</span>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md d-flex align-items-center justify-content-between">
-                    <img src="images/bootstrap.png" class="image-fluid images" alt="75%">
-                    <span class="fs-3 about-right">Bootstrap</span>
-                </div>
+                    
+                    <div class="bootstrap col-md d-flex align-items-center justify-content-between">
+                        <img src="images/bootstrap.png" class="image-fluid images" style="height: 75px;" alt="bootstrap logo">
+                        <span class="fs-3 about-right">Bootstrap</span>
+                    </div>
+                
                 </div>
                 
-                <p class="text-center about-right fs-3">
+                <p class="text-center about-right fs-4">
                     In my freetime, I play the piano, lift weights, and learn about new techologies. Feel free to contact me! 
                 </p>
             </div>
@@ -97,14 +96,14 @@
                     img-thumbnail" alt="etch-sketch image">
                 </a>
                 <p class="text-center fs-lg-1 fs-md-4">Etch-a-sketch drawing: <br>
-                Interactive digital recreation of the classic drawing toy and emulated the 
-                functionalities on a web platform.
+                    Interactive digital recreation of the classic drawing toy and emulated the 
+                    functionalities on a web platform.
                 <span style="color:rgb(249, 249, 188)">Tech stack: HTML, CSS, and JavaScript</span> </p>
             </div>
             <div class="col-md d-flex flex-column project enlarge">
                 <h3 class="text-center">Project Name</h3>
                 <a href="" target="_blank">
-                    <img src="images/etch-sketch.png" class="image-fluid img-thumbnail" alt="etch-sketch image">
+                    <img src="#" class="image-fluid img-thumbnail" alt="etch-sketch image">
                 </a>
                 <p>DESCRIPTION OF THE PROJECT</p>
             </div>
@@ -125,9 +124,9 @@
                     <input class="background" type="text" id="name" name="Name" placeholder="Name" required>
                     <input class="background" type="text" id="email" name="email" placeholder="Email" required>
                     <textarea class="background" id="message" name="message" placeholder="Message" style="height:220px"></textarea>
-                    <div class="d-flex justify-content-between align-items-center" style="padding: 0;">
-                        <div class="h-captcha " style="height: 80px;" data-captcha="true"></div>
-                        <button id="submit" class="background" type="submit" value="Submit">Submit</button>    
+                    <div class="d-flex justify-content-between" style="padding: 0;">
+                        <div class="h-captcha" data-captcha="true"></div>
+                        <button id="submit" class="flex-grow-1 rounded-1" type="submit" value="Submit">Submit</button>    
                     </div>
                     
                 </div>
