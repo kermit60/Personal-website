@@ -15,7 +15,7 @@
 </head>
 <body>
     <button id="top-button">Go to top</button>
-    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md py-4 fixed-top navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"> Kermit Liu</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar">
@@ -38,7 +38,7 @@
         </div>
     </nav>
 
-    <div class="container mw-100 ">
+    <div class="container mw-100">
         <div id="intro" class="row d-flex flex-column justify-content-center align-items-center">
             <div class="col-md-3  w-100 d-flex flex-column align-items-center 
             justify-content-center text-md-start text-sm-center">
@@ -46,9 +46,10 @@
             </div>
         </div>
 
-        <div id="about" class="row d-flex gap-5 p-md-5 p-sm-2">
+        <div id="about" class="row d-flex gap-5 p-lg-5 p-md-5 p-sm-5">
             <div class="col-md fs-1 d-flex flex-column align-items-center 
-                        justify-content-center about-left gap-3 rounded-4 p-lg-5 p-md-4 p-sm-5 gap-md-3 gap-sm-0 enlarge">
+                        justify-content-center about-left gap-3 rounded-4 p-lg-5 p-md-4 p-sm-5
+                        gap-md-3 gap-sm-0 enlarge">
                 <h1 class="text-center m-4" >About Me</h1>
                 <img src="images/cat.jpeg" class="image-fluid w-50 rounded-circle " alt="50%">
                 <p class="about-left text-center m-3 ">Hey! I'm Kermit, a student at the University of Waterloo studying Mathematics with a passion for Computer Science</p>
@@ -92,7 +93,7 @@
             <div class="col-md d-flex flex-column enlarge">
                 <h3 class="text-center">Etch-a-sketch</h3>
                 <a href="https://kermit60.github.io/Etch-a-sketch/" target="_blank">
-                    <img src="images/etch-sketch.png" class="project image-fluid
+                    <img src="images/etch-sketch.png" class="image-fluid
                     img-thumbnail" alt="etch-sketch image">
                 </a>
                 <p class="text-center fs-lg-1 fs-md-4">Etch-a-sketch drawing: <br>
@@ -115,7 +116,7 @@
                 <h3>Have a question for me or a quick message? <br>
                     Feel free to reach out.</h3>
             </div>
-            <form action="https://api.web3forms.com/submit" method="POST" class="col-md">
+            <form action="https://api.web3forms.com/submit" method="POST" class="col-md" onsubmit="reset();">
                 <h1 class="text-center">Contact Me!<br></h1>
                 
                 <input type="hidden" name="access_key" 
@@ -123,9 +124,12 @@
                 <div id="contact" class="row p-lg-5 p-md-5 p-sm-3 gap-3">
                     <input class="background" type="text" id="name" name="Name" placeholder="Name" required>
                     <input class="background" type="text" id="email" name="email" placeholder="Email" required>
-                    <textarea class="background" id="message" name="message" placeholder="Message" style="height:200px"></textarea>
-                    <div class="h-captcha" style="height: 100px;" data-captcha="true"></div>
-                    <button id="submit" class="background text-start" type="submit" value="Submit">Submit</button>
+                    <textarea class="background" id="message" name="message" placeholder="Message" style="height:220px"></textarea>
+                    <div class="d-flex justify-content-between align-items-center" style="padding: 0;">
+                        <div class="h-captcha " style="height: 80px;" data-captcha="true"></div>
+                        <button id="submit" class="background" type="submit" value="Submit">Submit</button>    
+                    </div>
+                    
                 </div>
             </form>
         </div>

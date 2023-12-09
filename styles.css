@@ -54,6 +54,10 @@ body {
     
 }
 
+.about {
+
+}
+
 #intro{
     min-height: 990px;
 }
@@ -110,3 +114,26 @@ body {
 ::placeholder {
     color: white;
 }
+
+/* Nav bar styling */
+.navbar {
+    background-color: #111333;
+}
+
+.background {
+    border-radius: 8px;
+    min-height: 50px;
+}
+
+.h-captcha {
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
