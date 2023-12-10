@@ -137,7 +137,12 @@ body {
     padding-left: 24px;
 }
 
-
+.profile {
+    width: 175px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
 
 
