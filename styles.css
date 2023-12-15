@@ -131,7 +131,7 @@ body {
 #submit {
     background: #0a0f1a;
     max-height: 77px;
-    border: solid white 2px;
+    border: solid white 1px;
 }
 
 .h-captcha {
@@ -153,6 +153,8 @@ body {
 
 .icons {
     max-height: 32px;
+    max-width: 32px;
+    border-radius: 50%;
 }
 
 .icons:hover {
