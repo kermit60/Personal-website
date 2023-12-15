@@ -1,6 +1,6 @@
 * {
     font-family: 'Poppins, Roboto', 'DM Sans', sans-serif;
-    border: red solid 1px;
+    /* border: red solid 1px; */
     color: var(--text);
     box-sizing: border-box;
 }
@@ -116,16 +116,22 @@ body {
     background-color: #111333;
 }
 
+.bottom-nav {
+    padding-bottom: 10vh;
+    background-color: #111333;
+}   
+
 .background {
     background: #0a0f1a;
     border-radius: 8px;
     min-height: 50px;
+    border: white solid 2px;
 }
 
 #submit {
     background: #0a0f1a;
-    max-height: 80px;
-    
+    max-height: 77px;
+    border: solid white 2px;
 }
 
 .h-captcha {
@@ -145,6 +151,14 @@ body {
 }
 
 
+.icons {
+    max-height: 32px;
+}
+
+.icons:hover {
+    margin-top: -5px;
+    cursor: pointer;
+}
 
 
 
