@@ -1,6 +1,6 @@
 * {
     font-family: 'Poppins, Roboto', 'DM Sans', sans-serif;
-    /* border: red solid 1px; */
+    border: red solid 1px;
     color: var(--text);
     box-sizing: border-box;
 }
@@ -37,18 +37,13 @@ body {
     
 }
 
-
 .about-left {
-    background-color: #3a64a8;
+    /* background-color: #3a64a8; */
+    border: solid white 3px;
     color: #e5eaf5;
-    max-height: 600px;
+    max-width: 600px;
 }
 
-.about-right {
-    background-color: rgb(175, 242, 212);
-    color: #0a0f1a;
-    max-height: 750px;
-}
 
 .nav-link {
     color: var(--text);
@@ -86,7 +81,7 @@ body {
     cursor: pointer;
     color:#ffffff;
     background-color: rgba(197, 248, 255, 0);
-    border: 1px #ffffff solid; 
+    border: 2px #ffffff solid; 
     font-size: 20px;
     padding: 10px;
 }
@@ -114,6 +109,7 @@ body {
 /* Nav bar styling */
 .navbar {
     background-color: #111333;
+    opacity: 0.95;
 }
 
 .bottom-nav {
