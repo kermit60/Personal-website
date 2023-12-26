@@ -1,6 +1,6 @@
 * {
     font-family: 'Poppins, Roboto', 'DM Sans', sans-serif;
-    border: red solid 1px;
+    /* border: red solid 1px; */
     color: var(--text);
     box-sizing: border-box;
 }
