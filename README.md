@@ -9,6 +9,7 @@ This repository contains the source code and assets for my personal website, whe
 - HTML 5 & CSS
 - Javascript
 - Bootstrap
-# Credits
+# Live
+
 
 
