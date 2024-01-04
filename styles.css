@@ -8,12 +8,13 @@
 :root {
     --text: #ffffff;
     --background: #0a0f1a;
+    --secondary-background: #111333;
     --primary: #d9b08c;
     --secondary: #1a2c56;
     --accent: #ba8e36;
 }
 
-:root[data-theme="light"] {
+:root.dark {
     --text: #000000;
     --background: #e5eaf5;
     --primary: #734a26;
@@ -28,11 +29,11 @@
 }
 
 body {
-    background-color: #0a0f1a;
+    background-color: var(--background);
 }
 
 .card {
-    border: white solid 2px;
+    border: var(--text) solid 2px;
     max-width: 850px;
 }
 
@@ -84,17 +85,17 @@ body {
     outline: none;
     border-radius: 15px;
     cursor: pointer;
-    color:#ffffff;
+    color:var(--text);
     background-color: rgba(197, 248, 255, 0);
-    border: 2px #ffffff solid; 
+    border: 2px var(--text) solid; 
     font-size: 20px;
     padding: 10px;
 }
 
 #top-button:hover {
-    color:#ffffff;
+    color:var(--text);
     border: none;
-    background-color: #0a0f1a;
+    background-color: var(--background);
 }
 
 .project {
@@ -104,7 +105,7 @@ body {
 
 .contact {
     margin-top: 30vh;
-    background-color: #111333;
+    background-color: var(--secondary-background);
 }
 
 ::placeholder {
@@ -113,24 +114,24 @@ body {
 
 /* Nav bar styling */
 .navbar {
-    background-color: #111333;
+    background-color: var(--secondary-background);
     opacity: 0.95;
 }
 
 .bottom-nav {
     padding-bottom: 10vh;
-    background-color: #111333;
+    background-color: var(--secondary-background);
 }   
 
 .background {
-    background: #0a0f1a;
+    background: var(--background);
     border-radius: 8px;
     min-height: 50px;
     border: white solid 2px;
 }
 
 #submit {
-    background: #0a0f1a;
+    background: var(--background);
     max-height: 77px;
     border: solid white 1px;
 }
